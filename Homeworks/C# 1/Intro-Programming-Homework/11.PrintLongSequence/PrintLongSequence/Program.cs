@@ -4,14 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace PrintLongSequence
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Pesho");
-            Console.WriteLine("Peshov");
+            for (int x = 2; x <= 1000; )
+            {
+                Console.Write(x++ + " ");
+                Console.Write(-x++ + " ");
+            }
         }
     }
 }
